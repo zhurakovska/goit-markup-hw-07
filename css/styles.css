@@ -144,11 +144,11 @@ body {
 }
 
 .mob-menu-item:not(:last-child) {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .mob-menu-link {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: var(--font-color);
@@ -175,13 +175,13 @@ body {
 }
 
 .contact-mob-number {
-  margin-bottom: 40px;
+  margin-bottom: 26px;
 }
 
 .contact-mob-link-number {
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 24px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -199,7 +199,7 @@ body {
 
 .social-mob-list {
   display: flex;
-  gap: 56px;
+  gap: 30px;
 }
 
 .social-mob-link {
@@ -710,10 +710,9 @@ padding: 96px 0;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* width: 408px; */
   width: 320px;
   min-height: 576px;
-  padding: 72px 24px 24px 24px;
+  padding: 72px 16px 24px 16px;
   background-color: #FCFCFC;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -910,6 +909,26 @@ padding: 96px 0;
     max-width: 428px;
   }
 
+  .mob-menu-item:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .mob-menu-link {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  .contact-mob-number {
+    margin-bottom: 40px;
+  }
+  .contact-mob-link-number {
+    font-size: 36px;
+  }
+
+  .social-mob-list {
+    gap: 56px;
+  }
+
   .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob.jpg);
   }
@@ -942,6 +961,7 @@ padding: 96px 0;
 
   .modal {
    width: 392px;
+   padding: 72px 24px 24px 24px;
   }
 
   .modal-checkbox-text {
