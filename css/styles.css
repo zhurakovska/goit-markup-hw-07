@@ -590,14 +590,18 @@ padding: 96px 0;
 }
 
 .portfolio {
-  padding: 96px 0 120px; 
+  /* padding: 96px 0 120px;  */
+  padding: 48px 0; 
 }
 
 .filter-list {
-  margin-bottom: 72px;
+  margin-bottom: 48px;
+  /* margin-bottom: 72px; */
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  /* gap: 24px; */
+  gap: 12px;
 }
 
 .filter-btn {
@@ -627,12 +631,12 @@ padding: 96px 0;
 
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 48px 24px;
+  flex-direction: column;
+  gap: 48px;
 }
 
 .portfolio-card {
-  width: calc((100% - 48px) / 3);
+  width: 100%;
 }
 
 .portfolio-link:hover .portfolio-top-text,
@@ -682,7 +686,7 @@ padding: 96px 0;
 
 .portfolio-heading {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--font-color);
@@ -963,6 +967,14 @@ padding: 96px 0;
     max-width: 268px;
   }
 
+  .filter-list {
+    gap: 24px;
+  }
+
+  .portfolio-heading {
+    font-size: 20px;
+  }
+
   .modal {
    width: 392px;
    padding: 72px 24px 24px 24px;
@@ -1129,6 +1141,16 @@ padding: 96px 0;
 
   .footer-subscribe-btn {
     margin-top: 0;
+  }
+
+  .portfolio-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+  }
+
+  .portfolio-card {
+    width: calc((100% - 24px) / 2);
   }
 
   .modal {
@@ -1309,5 +1331,13 @@ padding: 96px 0;
 
   .footer-subscribe-input {
     width: 264px;
+  }
+
+  .portfolio-list {
+    gap: 48px 24px;
+  }
+
+  .portfolio-card {
+    width: calc((100% - 48px) / 3);
   }
 }
